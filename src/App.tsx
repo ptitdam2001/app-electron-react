@@ -1,30 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
 import './App.css';
-import { Button } from '@material-ui/core';
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
+import { Home } from './pages/Home';
+import { Feed } from './pages/Feed';
+import { Menu } from './features/core/Menu/Menu.component';
+import { MenuContent } from './features/core/Menu/MenuContent.type';
 
 function App() {
+  const menuItems: MenuContent[] = [
+    {
+      path: '/',
+      label: 'Home'
+    },
+    {
+      path: '/feed',
+      label: 'Feed'
+    }
+  ]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.gfbgfff
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-      <div>
-        <Button variant="contained" color="primary">
-          Hello World
-        </Button>
-      </div>
+      <Router>
+        <header>
+          <Menu items={menuItems} />
+        </header>
+        <section>
+          <Switch>
+            <Route path="/feed" component={Feed} />
+            <Route component={Home} />
+          </Switch>
+        </section>
+      </Router>
     </div>
   );
 }
