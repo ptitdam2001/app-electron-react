@@ -17,6 +17,11 @@ function App() {
       label: 'Feed'
     }
   ]
+
+  React.useEffect(() => {
+    new Notification('Hello!', { body: 'This is a notification'})
+  }, [])
+
   return (
     <div className="App">
       <Router>
