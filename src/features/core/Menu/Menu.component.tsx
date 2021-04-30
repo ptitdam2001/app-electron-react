@@ -19,7 +19,7 @@ export const Menu: React.FC<MemuProps> = (props: MemuProps) => {
 		<Paper square>
       <Tabs value={currentIndex} onChange={handleChange} indicatorColor="primary" textColor="primary">
 				{items.map((item:MenuContent) => (
-					<Tab label={item.label} component={Link} to={item.path} />
+					<Tab label={item.label} component={Link} to={item.path} key={item.label} />
 				))}
       </Tabs>
     </Paper>

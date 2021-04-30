@@ -6,21 +6,21 @@ import { Feed } from './pages/Feed';
 import { Menu } from './features/core/Menu/Menu.component';
 import { MenuContent } from './features/core/Menu/MenuContent.type';
 
-function App() {
-  const menuItems: MenuContent[] = [
-    {
-      path: '/',
-      label: 'Home'
-    },
-    {
-      path: '/feed',
-      label: 'Feed'
-    }
-  ]
+const menuItems: MenuContent[] = [
+  {
+    path: '/',
+    label: 'Home',
+  },
+  {
+    path: '/feed',
+    label: 'Feed',
+  }
+];
 
+function App() {
   React.useEffect(() => {
-    new Notification('Hello!', { body: 'This is a notification'})
-  }, [])
+    new Notification('Hello!', { body: 'This is a notification'});
+  }, []);
 
   return (
     <div className="App">

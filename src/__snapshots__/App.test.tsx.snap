@@ -1,0 +1,71 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders learn react link 1`] = `
+<div
+  class="App"
+>
+  <header>
+    <div
+      class="MuiPaper-root MuiPaper-elevation1"
+    >
+      <div
+        class="MuiTabs-root"
+      >
+        <div
+          class="MuiTabs-scroller MuiTabs-fixed"
+          style="overflow: hidden;"
+        >
+          <div
+            class="MuiTabs-flexContainer"
+            role="tablist"
+          >
+            <a
+              aria-disabled="false"
+              aria-selected="true"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary Mui-selected"
+              href="/"
+              role="tab"
+              tabindex="0"
+            >
+              <span
+                class="MuiTab-wrapper"
+              >
+                Home
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </a>
+            <a
+              aria-disabled="false"
+              aria-selected="false"
+              class="MuiButtonBase-root MuiTab-root MuiTab-textColorPrimary"
+              href="/feed"
+              role="tab"
+              tabindex="-1"
+            >
+              <span
+                class="MuiTab-wrapper"
+              >
+                Feed
+              </span>
+              <span
+                class="MuiTouchRipple-root"
+              />
+            </a>
+          </div>
+          <span
+            class="PrivateTabIndicator-root-1 PrivateTabIndicator-colorPrimary-2 MuiTabs-indicator"
+            style="left: 0px; width: 0px;"
+          />
+        </div>
+      </div>
+    </div>
+  </header>
+  <section>
+    <div>
+      Home page
+    </div>
+  </section>
+</div>
+`;
